@@ -1,0 +1,145 @@
+pwd
+bash --version
+echo 'Blessingoyeromi'
+echo 'HackBio'
+hackbio=1
+echo $hackbio
+pwd
+mkdir
+ls
+mkdir hackbio
+ls
+echo 'Blessing Oyeromi'
+mkdir Blessing Oyeromi
+ls
+rm README-cloudshell.txt
+ls
+echo 'Blessing Oyeromi'
+mkdir Blessing Oyeromi
+rm -r Blessing Oyeromi
+ls
+rm -r hackbio
+ls
+pwd
+echo 'blessing'
+mkdir blessing
+ls
+rm README-cloudshell.txt
+ls
+mkdir -p blessing/biocomputing
+history
+rm blessing
+rm -r blessing
+echo 'Blessing'
+mkdir Blessing
+ls
+rm README-cloudshell.txt 
+ls
+mkdir -p Blessing/biocomputing cd Blessing/biocomputing/
+ls
+mkdir -p Blessing/biocomputing
+ls 
+rm Blessing/
+rm Blessing
+rm -r Blessing
+ls
+rm -r cd
+ls
+rm -r biocomputing
+pwd
+echo 'blessing'
+mkdir blessing
+ls
+rm README-cloudshell.txt 
+ls
+mkdir blessing
+mkdir oye
+ls
+rm README-cloudshell.txt 
+ls
+mkdir -p oye/biocomputing/ cd oye/biocomputing
+ls
+cd oye/
+cd oye/biocomputing/
+cd../
+cd ../
+mkdir -p oye/biocomputing
+ls
+cd oye/biocomputing/
+cd ../
+mkdir -p oye/bash && cd oye/bash
+mkdir -p blessing/biocomputing && cd blessing/biocomputing
+cd../
+cd ../
+wgethttps://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+ls
+rm -r cd
+rm -r oye
+ls
+mv wildtype.fna blessing/
+ls
+ls blessing/
+curl https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+rm -r blessing
+rm -r biocomputing
+ls
+rm -r wildtype.gbk
+rm -r wildtype.gbk.1 
+ls
+echo 'blessing'
+mkdir oyeromi
+ls
+rm README-cloudshell.txt 
+ls
+mkdir -p oyeromi/biocomputing && cd oyeromi/biocomputing
+cd ../
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+mv wildtype.fna oyeromi/
+ls
+ls oyeromi/
+rm wildtype.gbk.1
+ls
+grep 'tatatata' wildtype.gbk 
+grep 'tata' wildtype.gbk 
+greo "tatatata" wildtype.gbk > mutant
+grep "tatatata" wildtype.gbk > mutant
+ls
+wbc -l wildtype.gbk 
+wc -l wildtype.gbk 
+awk -F"\t" '{print $1}' wildtype.gbk 
+history
+pwd
+echo 'oyeromi'
+mkdir oyeromi
+ls
+mkdir -p oyeromi/biocomputing && cd oyeromi/biocomputing
+ls
+cd ../
+cd../
+cd ../
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+mv wildtype.fna oyeromi/
+ls
+ls oyeromi/
+rm wildtype.gbk.1
+ls
+grep 'tatatata' wildtype.gbk 
+grep 'tata' wildtype.gbk 
+grep "tatatata" wildtype.gbk > mutant
+ls
+wc -l wildtype.gbk 
+head -n 1 wildtype.gbk | grep "LOCUS"
+head -n 1 wildtype.gbk | grep "SOURCE"
+head -n 1 wildtype.gbk | grep "SOURCE ORGANISM"
+SOURCE
+SOURCE wildtype.gbk 
+head -n 1 wildtype.gbk | grep "source"
+source wildtype.gbk 
+history
+history > bash_assignments.txt
+ls
+history -w bash_assignments.txt
