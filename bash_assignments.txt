@@ -1,145 +1,108 @@
-pwd
-bash --version
-echo 'Blessingoyeromi'
-echo 'HackBio'
-hackbio=1
-echo $hackbio
-pwd
-mkdir
-ls
-mkdir hackbio
-ls
-echo 'Blessing Oyeromi'
-mkdir Blessing Oyeromi
-ls
-rm README-cloudshell.txt
-ls
-echo 'Blessing Oyeromi'
-mkdir Blessing Oyeromi
-rm -r Blessing Oyeromi
-ls
-rm -r hackbio
-ls
-pwd
+##Print your name
 echo 'blessing'
+#Create a folder titled your name
 mkdir blessing
-ls
-rm README-cloudshell.txt
-ls
-mkdir -p blessing/biocomputing
-history
-rm blessing
-rm -r blessing
-echo 'Blessing'
-mkdir Blessing
-ls
-rm README-cloudshell.txt 
-ls
-mkdir -p Blessing/biocomputing cd Blessing/biocomputing/
-ls
-mkdir -p Blessing/biocomputing
-ls 
-rm Blessing/
-rm Blessing
-rm -r Blessing
-ls
-rm -r cd
-ls
-rm -r biocomputing
-pwd
-echo 'blessing'
-mkdir blessing
-ls
-rm README-cloudshell.txt 
-ls
-mkdir blessing
-mkdir oye
-ls
-rm README-cloudshell.txt 
-ls
-mkdir -p oye/biocomputing/ cd oye/biocomputing
-ls
-cd oye/
-cd oye/biocomputing/
-cd../
-cd ../
-mkdir -p oye/biocomputing
-ls
-cd oye/biocomputing/
-cd ../
-mkdir -p oye/bash && cd oye/bash
-mkdir -p blessing/biocomputing && cd blessing/biocomputing
-cd../
-cd ../
-wgethttps://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
+#Create another new directory titled biocomputing and change to that directory with one line of command
+mkdir biocomputing && cd biocomputing
+#Download these 3 files:
 wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
 wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
-ls
-rm -r cd
-rm -r oye
-ls
-mv wildtype.fna blessing/
-ls
-ls blessing/
-curl https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
-rm -r blessing
-rm -r biocomputing
-ls
-rm -r wildtype.gbk
-rm -r wildtype.gbk.1 
-ls
-echo 'blessing'
-mkdir oyeromi
-ls
-rm README-cloudshell.txt 
-ls
-mkdir -p oyeromi/biocomputing && cd oyeromi/biocomputing
+#Move the .fna file to the folder titled your name
+mv wildtype.fna ../blessing/;
+#Delete the duplicate gbk file
+rm wildtype.gbk.1;
+#Confirm if the .fna file is mutant or wild type (tatatata vs tata)
+mutant_grep=$(grep -i 'tatatata' Blessing/wildtype.gbk)
+mutant_grep=$(grep -i 'tatatata' blessing/wildtype.gbk)
 cd ../
-wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
-wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
-mv wildtype.fna oyeromi/
-ls
-ls oyeromi/
-rm wildtype.gbk.1
-ls
-grep 'tatatata' wildtype.gbk 
-grep 'tata' wildtype.gbk 
-greo "tatatata" wildtype.gbk > mutant
-grep "tatatata" wildtype.gbk > mutant
-ls
-wbc -l wildtype.gbk 
+mutant_grep=$(grep -i 'tatatata' blessing/wildtype.gbk)
+mutant_grep=$(grep -i 'tatatata' Blessing/wildtype.gbk)
+mutant_grep=$(grep -i 'tatatata' blessing/wildtype.fna)
+if [[ $mutant_grep == "" ]]; then  echo 'this is mutant';  else echo 'this is mutant';  echo $mutant_grep| tr ' ' '\n' >Blessing/mutant_lines.txt;  echo $mutant_grep| tr ' ' '\n' >blessing/mutant_lines.txt; fi
+#If mutant, print all matching lines into a new file
+grep "tatatata" ../bless/wildtype.fna > mutant_lines.txt;
+grep "tatatata" ../blessing/wildtype.fna > mutant_lines.txt;
+#Count number of lines (excluding header) in the .gbk file
 wc -l wildtype.gbk 
-awk -F"\t" '{print $1}' wildtype.gbk 
-history
-pwd
-echo 'oyeromi'
-mkdir oyeromi
-ls
-mkdir -p oyeromi/biocomputing && cd oyeromi/biocomputing
-ls
-cd ../
-cd../
-cd ../
-wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna
 wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
-mv wildtype.fna oyeromi/
-ls
-ls oyeromi/
-rm wildtype.gbk.1
-ls
-grep 'tatatata' wildtype.gbk 
-grep 'tata' wildtype.gbk 
-grep "tatatata" wildtype.gbk > mutant
-ls
 wc -l wildtype.gbk 
-head -n 1 wildtype.gbk | grep "LOCUS"
-head -n 1 wildtype.gbk | grep "SOURCE"
-head -n 1 wildtype.gbk | grep "SOURCE ORGANISM"
-SOURCE
-SOURCE wildtype.gbk 
-head -n 1 wildtype.gbk | grep "source"
-source wildtype.gbk 
-history
-history > bash_assignments.txt
+#Print the sequence length of the .gbk file. (Use the LOCUS tag in the first line)
+grep "LOCUS" wildtype.gbk | awk '{print $3, $4}'
+#Print the source organism of the .gbk file. (Use the SOURCE tag in the first line)
+grep "SOURCE" wildtype.gbk | awk '{print $2}'
+#List all the gene names of the .gbk file. Hint {grep '/gene='}
+grep '/gene=' wildtype.gbk 
+# Clear your terminal space and print all commands used today
+clear && history > commands_project_1.txt; cat commands_project_1.txt
+##Project 2: Installing Bioinformatics Software 
+#
+#Activate your base conda environment
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+conda --version
+conda --versionco c
+conda --version
+-bash: conda: command not found
+conda --version
+bash Miniconda3-latest-Linux-x86_64.sh
+conda --version
+conda init bash
+conda --version
+conda list
+conda --version
+rm -r miniconda3
 ls
-history -w bash_assignments.txt
+wget         export PATH="/path/to/your/miniconda3/bin:$PATH"
+wget  https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+conda --version
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+conda create -n bioenv python=3.10
+conda activate bioenv
+conda install samtools
+conda install bcftools bedtools fastqc
+conda install hisat2 bowtie2
+conda install blast
+conda install samtools bcftools bedtools fastqc
+## Project 2 Installing Bioinformatics Software on the Terminal
+#Activate your base conda environment
+conda activate
+Create a conda environment named funtools
+#Create a conda environment named funtools
+conda create -n funtools python=3.10
+conda activate funtools
+#Install Figlet using conda 
+conda install conda-forge::pyfiglet
+#Run figlet <your name>
+pyfiglet blessing
+#Install bwa through the bioconda channel
+conda istall biconda::bwa
+conda install biconda::bwa
+conda install bioconda::bwa
+du -hs $(ls -A)
+rm -r  Miniconda3-latest-Linux-x86_64.sh.2
+conda install bioconda::bwa
+du -hs $(ls -A)
+rm -r Miniconda3-latest-Linux-x86_64.sh.1
+conda install bioconda::bwa
+#Install blast through the bioconda channel
+conda install bioconda::blast
+#Install samtools through the bioconda channel
+conda install bioconda::samtools
+# Install bedtools through the bioconda channel
+conda install bioconda::bedtools
+#Install spades.py through the bioconda channel
+conda install bioconda::spades
+#Install bcftools through the bioconda channel
+conda install bioconda bcftools
+#Install fastp through the bioconda channel
+conda install bioconda::fastp
+#Install multiqc through the bioconda channel
+conda install bioconda::multiqc
+du -hs $(ls -A)
+rm -r .cache
+du -hs $(ls -A)
+conda install bioconda::multiqc
+history -a
